@@ -25,7 +25,6 @@ const routes = require("./routes/fromRoute");
 mongoose
   .connect(uri, {
     useUnifiedTopology: true,
-    useNewUrlParser: true,
   })
   .then(() => {
     app.listen(port, () => {
