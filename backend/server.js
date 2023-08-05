@@ -14,6 +14,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+//  TEST API
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "Welcome to tbs server" });
+});
+
 const routes = require("./routes/fromRoute");
 
 // Connect to DB
